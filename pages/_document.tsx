@@ -3,10 +3,9 @@ import Document, {
   DocumentInitialProps,
   Html,
   Main,
+  Head,
   NextScript,
 } from 'next/document';
-import Head from 'next/head';
-import { render } from 'react-dom';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -44,12 +43,12 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=korean"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean"
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean"
           />
         </Head>
         <body>
