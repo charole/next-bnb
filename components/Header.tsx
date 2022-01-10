@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
-// eslint-disable-next-line object-curly-spacing
 import { ReactComponent as AirbnbLogoIcon } from '../public/static/svg/logo/logo.svg';
 import { ReactComponent as AirbnbLogoTextIcon } from '../public/static/svg/logo/logo_text.svg';
 import palette from '../styles/palette';
@@ -64,7 +63,7 @@ const Header = () => {
       <Link href="/">
         <a className="header-logo-wrapper">
           <AirbnbLogoIcon className="header-logo" />
-          <AirbnbLogoTextIcon />
+          <AirbnbLogoTextIcon className="header-logo-text" />
         </a>
       </Link>
       <div className="header-auth-buttons">
